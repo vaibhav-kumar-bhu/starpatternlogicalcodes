@@ -1,7 +1,10 @@
 import java.util.Scanner;
+
+// Time complexity of this algo is NlognN
 class sorts
 {
-	public  void merge( int arr[],int n,int l,int mid,int h)
+	// This method is used for merging process 
+	public static  void merge( int arr[],int n,int l,int mid,int h)
 	{
 		 int aux[]=new int[n];
 		
@@ -38,7 +41,10 @@ class sorts
 
 
 	}
-	public  void mergesort( int arr[],int n,int l,int h)
+   
+   // This is the division part where arrays breaks down into piceces
+	
+	public  static void mergesort( int arr[],int n,int l,int h)
 	{
 		int mid;
 		if(l<h)
@@ -49,9 +55,9 @@ class sorts
 			merge(arr,n,l,mid,h);
 		}
 	}
-	 public void display( int arr[],int n)
-
-	{
+	//This method will print the sorted array
+	 public static void display( int arr[],int n)
+	 {
 		for(int i=0;i<n;i++)
 		{
 			System.out.println(arr[i]);
